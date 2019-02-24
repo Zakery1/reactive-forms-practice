@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
-  selector: 'app-first-form',
-  templateUrl: './first-form.component.html',
-  styleUrls: ['./first-form.component.css']
+	selector: 'app-first-form',
+	templateUrl: './first-form.component.html',
+	styleUrls: ['./first-form.component.css']
 })
 export class FirstFormComponent implements OnInit {
 
-  constructor() { }
+	name = new FormControl('');
 
-  ngOnInit() {
-  }
+	updateName() {
+		this.name.setValue('Zak');
+	}
+
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }
