@@ -8,10 +8,10 @@ import { FormControl } from '@angular/forms';
 })
 export class FirstFormComponent implements OnInit {
 
-	name = new FormControl('');
+	firstForm = new FormControl('');
 
 	updateName() {
-		this.name.setValue('Zak');
+		this.firstForm.setValue('Zak');
 	}
 
 	constructor() { }
